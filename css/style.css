@@ -50,6 +50,10 @@ ________
   width: 2.1875rem;
 }
 
+.menu-list li a span{
+  display: none;
+}
+
 .playlist{
   display: none;
 }
