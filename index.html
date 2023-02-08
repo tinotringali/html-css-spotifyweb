@@ -10,60 +10,67 @@
     <title>Spotify Web</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="nav-main">
-            <!-- loghi -->
-            <section>
-                <div class="logo">
-                <img src="img/logo.svg" alt="Spotify">
-                </div>
-                <div class="logo-mobile">
-                    <img src="img/logo-small.svg" alt="Spotify">
+    <main>
+        <div class="container flex">
+            <!-- inizio main menu -->
+            <nav class="main-menu flex row">
+                <section class="main-menu-nav">
+                    <!-- loghi -->
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Spotify">
+                      </div>
+                      <div class="logo-mobile">
+                        <img src="img/logo-small.svg" alt="Spotify">
+                    </div>
+                    <!-- loghi -->
+                    <ul class="flex row">
+                        <li><a href="#"><img src="img/home.svg" alt=""><span>Home</span></a></li>
+                        <li><a href="#"><img src="img/search.svg" alt=""><span>cerca</span></a></li>
+                        <li><a href="#"><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
+                    </ul>
+                </section>
+                <!-- playlist -->
+                <section class="playlist">
+                    <h2>PLAYLIST</h2>
+                    <div><a href="#">crea playlist</a></div>
+                    <div>
+                        <ul class="create-playlist">
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                            <li><a href="#">nome playlist</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- playlist -->
+                <!-- menu-bottom -->
+                <section class="bottom-menu">
+                    <div class="download">
+                        <a href="#"><img src="img/download.svg"><span>Installa app</span></a>
+                      </div>
+                      <div class="user">
+                        <div class="avatar"><img src="img/profile.svg"></div>
+                        <h2 class="name">John Doe</h2>
+                      </div>
+                </section>
+                <!-- menu-bottom -->
+            </nav>
+            <!-- fine main menu -->
+            <section class="content">
+                <div class="btn-upgrade">
+                    <a href="#" class="btn">Effettua l'upgrade</a>
                 </div>
             </section>
-            <!-- loghi -->
-            <!-- icone menu -->
-            <section class="nav-main-menu">     
-                <ul class="menu-list">
-                    <li> 
-                        <a href="#"><img src="img/home.svg" alt="Home"><span>Home</span></a>
-                    </li>
-                    <li> 
-                        <a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a>
-                    </li>
-                    <li> 
-                        <a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></a>
-                    </li>
-                </ul>
-            </section>
-            <!-- icone menu -->
-            <!-- playlist -->
-            <section class="playlist">                  
-                <h2>Playlist</h2>
-                <a href="#" class="add-playlist"><span>Crea Playlist</span></a>
-                <ul class="list-playlist">
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
-            </section>
-            <!-- playlist -->
-            <!-- user area -->
-            <section class="nav-bottom">
-                <div class="download">
-                    <a href="#"><img src="img/download.svg"><span>Installa app</span></a>
-                </div>
-                <div class="user">
-                    <div class="user-avatar"><img src="img/profile.svg"></div>
-                    <h2 class="name">John Doe</h2>
-                </div>
-            </section>
-            <!-- user area -->
-        </nav>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            
+        </section>
+    </footer>
+    
 </body>
 </html>
