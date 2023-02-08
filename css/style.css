@@ -32,6 +32,10 @@ a {
 .row {
   flex-direction:column;
 }
+
+.space{
+  justify-content: space-between;
+}
 /* 
 ____________
 main-menu
@@ -90,6 +94,40 @@ ____________
   overflow: auto;
   width: calc(100% - 50px);
 }
+
+.btn-upgrade{
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(8, 11, 18, 0.5);
+  height: 5.625rem;
+}
+
+.btn{
+  border: 1px solid white;
+  border-radius: 1.25rem;
+  padding: .75rem 2.5rem;
+  font-size: .75rem;
+  position: relative;
+  right: 1.5625rem;
+
+}
+
+.content-nav{
+  margin-top: .625rem;
+}
+
+.menu-content{
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: .75rem;
+  line-height: 2.5rem;
+}
+
+.menu-content li{
+  width: calc(100% / 4);
+  text-align: center;
+}
+
 /* 
 ____________
 footer
