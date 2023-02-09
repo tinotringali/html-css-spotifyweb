@@ -262,13 +262,68 @@ ____________
 .menu-content li {
   width: 100%;
   padding: .625rem;
-  flex-wrap: nowrap;
 }
 
 .menu-content {
   flex-wrap: nowrap;
 }
 }
+/* 
+_______________
+Recently played
+_______________
+*/
+
+.played .track-item {
+flex-wrap: wrap;
+}
+
+.played .box {
+width: calc(100% / 2);
+text-align: center;
+padding: .625rem;
+}
+
+.box img{
+width: 100%;
+}
+
+@media screen and (min-width:640px) {
+.played .box {
+width: calc(100% / 4);
+}
+
+}
+
+@media screen and (min-width:878px) {
+.played .box {
+width: 100%;
+}
+
+.played .track-item {
+flex-wrap: nowrap;
+}
+}
+/* 
+_______________
+Creato per John Doe
+_______________
+*/
+.track-box .box {
+  padding: .625rem;
+  text-align: center;
+  width: 12.5rem;
+}
+/* 
+_______________
+artisti più popolari
+_______________
+*/
+.popular-artist .box {
+  padding: .625rem;
+  text-align: center;
+}
+
 /* 
 ____________
 footer
