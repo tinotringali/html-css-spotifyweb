@@ -23,6 +23,7 @@ li {
 
 a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .flex {
@@ -41,6 +42,9 @@ ____________
 main-menu
 ____________
 */
+main{
+  overflow: hidden;
+}
 
 .container{
   width: 100%;
@@ -50,8 +54,32 @@ ____________
 .container .main-menu{
   height: calc(100vh - 90px);
   width: 50px;
-  padding: 0 1.25rem;
+  text-align: center;
   background-color: black;
+  font-size: .8125rem;
+}
+
+.menu-logo{
+  line-height: 2.1875rem ;
+  margin-top: .9375rem;
+}
+
+.logo{
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu-logo li img{
+  height: 1.6875rem;
+  vertical-align: middle;
+}
+
+.logo-mobile img{
+  width: 70%;
+}
+
+.logo-mobile{
+  padding: .3125rem;
 }
 
 .main-menu .main-menu-nav ul li span,
@@ -62,9 +90,71 @@ ____________
   display: none;
 }
 
+.playlist h2{
+  margin: 1.875rem 0 .9375rem 0;
+  font-size: .875rem;
+}
+
+.add-playlist{
+  font-size: .9375rem;
+}
+
+.create-playlist{
+  margin-top: .625rem;
+  line-height: 1.875rem;
+  overflow-y: auto;
+  height: 9.375rem;
+}
+
+.add-playlist::before{
+  display: inline-block;
+  content: '+';
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: .625rem;
+  font-size: 2.1875rem;
+  vertical-align: middle;
+  line-height: 2.1875rem ;
+  width: 2.1875rem;
+  height: 2.1875rem;
+
+}
+
+.bottom-menu{
+  margin-top: auto;
+}
+
+.bottom-menu img{
+  vertical-align: middle;
+  margin-right: .625rem;
+}
+
+.bottom-menu .download img{
+  width: .9375rem;
+}
+
+.user h2{
+  font-size: .875rem;
+  vertical-align: baseline;
+}
+
+.avatar{
+  width: 30px;
+  margin: .9375rem auto;
+}
+
+hr{
+  margin-top: 10px;
+  margin-right: 1.25rem;
+}
+
 @media screen and (min-width:552px) {
 
-  .main-menu .main-menu-nav ul li span,
+  .container .main-menu{
+   text-align: left;
+   padding-left: 20px;
+  }
+
   .main-menu .playlist,
   .main-menu .bottom-menu span,
   .main-menu .bottom-menu h2,
@@ -72,12 +162,29 @@ ____________
       display: block;
   }
 
+  .main-menu .main-menu-nav ul li span,
+  .main-menu .bottom-menu span{
+    display: inline-block;
+  }
+
   .logo-mobile{
     display: none;
   }
 
+  .menu-logo{
+    margin-top: 0;
+  }
+
   .container .main-menu{
     width: 230px;
+  }
+  
+  .user{
+    margin: .9375rem 0; 
+  }
+
+  .avatar{
+    margin:0;
   }
 
   .content{
