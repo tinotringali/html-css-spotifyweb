@@ -144,6 +144,7 @@ main{
 }
 
 hr{
+  display: none;
   margin-top: 10px;
   margin-right: 1.25rem;
 }
@@ -182,7 +183,9 @@ hr{
   .user{
     margin: .9375rem 0; 
   }
-
+  hr{
+    display: block;
+  }
   .avatar{
     margin:0;
   }
@@ -216,7 +219,11 @@ ____________
   font-size: .75rem;
   position: relative;
   right: 1.5625rem;
+  color: #fff;
+}
 
+.btn:hover{
+  scale: 1.1;
 }
 
 .content-nav{
@@ -235,6 +242,33 @@ ____________
   text-align: center;
 }
 
+@media screen and (min-width:640px) {
+.menu-content li {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: .625rem;
+}
+}
+
+@media screen and (min-width:878px) {
+.menu-content li {
+  width: calc(100% / 5);
+  text-align: center;
+  padding: .625rem;
+}
+}
+
+@media screen and (min-width:878px) {
+.menu-content li {
+  width: 100%;
+  padding: .625rem;
+  flex-wrap: nowrap;
+}
+
+.menu-content {
+  flex-wrap: nowrap;
+}
+}
 /* 
 ____________
 footer
